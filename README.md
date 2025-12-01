@@ -1,9 +1,9 @@
 # End-to-End Retail Data Warehouse Pipeline
 
 ## 📌 Project Overview
-Aquest projecte simula un entorn de **Business Intelligence** real. L'objectiu és transformar dades brutes de vendes en un **Data Warehouse** optimitzat per a l'anàlisi de negoci.
+This project simulates a real-world **Business Intelligence** environment. The goal is to transform raw sales data into a **Data Warehouse** optimized for business analytics.
 
-He construït un pipeline ETL (Extract, Transform, Load) complet utilitzant **Python** i he modelat les dades en un **Star Schema** (Model en Estrella) utilitzant **SQL**.
+I built a complete **ETL** (Extract, Transform, Load) pipeline using **Python** and modeled the data into a **Star Schema** architecture using **SQL**.
 
 ## 🛠 Tech Stack
 * **Python:** Pandas (Data Cleaning), SQLAlchemy (ORM).
@@ -12,14 +12,14 @@ He construït un pipeline ETL (Extract, Transform, Load) complet utilitzant **Py
 * **Visualization:** Matplotlib.
 
 ## 🏗 Architecture
-Les dades es transformen d'un fitxer pla (`csv`) a un model relacional:
-* **Fact Table:** `fact_vendes` (Transaccions).
-* **Dimensions:** `dim_clients`, `dim_productes`, `dim_llocs`.
+Data is transformed from a flat file (`.csv`) into a relational model:
+* **Fact Table:** `fact_vendes` (Transactions).
+* **Dimensions:** `dim_clients` (Customers), `dim_productes` (Products), `dim_llocs` (Locations).
 
 ## 📊 Business Insights (Examples)
-Mitjançant consultes SQL complexes, hem descobert que:
-1.  La categoria **Technology** és la més rendible (17.4% de marge).
-2.  La categoria **Furniture** té un rendiment crític (només 2.5%), suggerint problemes de costos logístics.
+Leveraging advanced SQL queries, the analysis revealed that:
+1.  The **Technology** category is the most profitable (17.4% margin).
+2.  The **Furniture** category is critically underperforming (only 2.5% margin), suggesting potential issues with logistics costs.
 
 ## 🚀 How to Run
 1.  Install dependencies: `pip install -r requirements.txt`
